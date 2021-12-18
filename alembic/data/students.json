@@ -1,0 +1,23 @@
+[
+    {
+        "email": "bosco@example.com",
+        "role": 2,
+        "password": "testing123",
+        "created_at": "2021-10-03 01:00:00-06",
+        "updated_at": "2021-10-03 01:00:00-06"
+    },
+    {
+        "email": "fish@example.com",
+        "role": 2,
+        "password": "testing123",
+        "created_at": "2021-10-03 01:00:00-06",
+        "updated_at": "2021-10-03 01:00:00-06"
+    },
+    {
+        "email": "kitkat@example.com",
+        "role": 2,
+        "password": "testing123",
+        "created_at": "2021-10-03 01:00:00-06",
+        "updated_at": "2021-10-03 01:00:00-06"
+    }
+]
