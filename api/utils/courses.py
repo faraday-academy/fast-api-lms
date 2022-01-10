@@ -21,7 +21,7 @@ def create_course(db: Session, course: CourseCreate):
     db_course = Course(
         title=course.title,
         description=course.description,
-        user_id=course.user_id
+        user_id=course.user_id,
     )
     db.add(db_course)
     db.commit()

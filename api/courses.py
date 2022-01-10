@@ -18,7 +18,9 @@ async def read_courses(db: Session = Depends(get_db)):
 
 
 @router.post("/courses", response_model=Course)
-async def create_new_course(course: CourseCreate, db: Session = Depends(get_db)):
+async def create_new_course(
+    course: CourseCreate, db: Session = Depends(get_db)
+):
     return create_course(db=db, course=course)
 
 
