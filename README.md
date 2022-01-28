@@ -78,13 +78,17 @@ This is a learning management system where teachers can manage student and stude
 - content
 - section_id
 
-**CompletedContentBlock**
+**StudentCourse**
+
+*This model is used for teachers to assign courses to students. The 'completed' boolean is False until the student has completed the whole course.*
 
 - student_id
 - course_id
 - completed
 
-**StudentCourse**
+**CompletedContentBlock**
+
+*Every time the student completes a content block, a row is created in this table. The teacher can then go and edit this information when they grade the content block and provide feedback.*
 
 - student_id
 - content_block_id
