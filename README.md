@@ -15,6 +15,13 @@ You can follow along with the video and check out different branches for each st
 
 This is a learning management system where teachers can manage student and students can see their courses.
 
+- Teachers can perform CRUD operations on students.
+- Teachers can create courses with sections and content blocks in each section.
+- Teachers can assign courses to students.
+- Students can interact view their courses in a list.
+- Students can see the sections and content blocks for individual courses that they are taking.
+- Students are able to see their progress for each course.
+
 ## Running the App Locally
 
 1. Make sure Python, Poetry, and Postgres are installed. Postgres must be running. *If you need help with this, please follow the instructions in the video linked at the top of this README.*
@@ -28,7 +35,7 @@ This is a learning management system where teachers can manage student and stude
 - Python 3.9+
 - Poetry
 - Postgres
-- SQL Alchemy
+- SQL Alchemy 1.4+
 - Alembic
 - Pydantic
 - Black
@@ -37,4 +44,40 @@ This is a learning management system where teachers can manage student and stude
 
 ## Schema
 
+**User**
 
+- email: str
+- role: enum (student, teacher)
+- is_active: bool
+
+**Profile**
+
+- first_name: str
+- last_name: str
+- bio: str (TextField)
+- user_id: fk
+
+**Course**
+
+- title: str
+- description: str (TextField)
+- user_id: fk
+
+**Section**
+
+- title
+- description
+- course_id
+
+**ContentBlock**
+
+- title
+- description
+- type
+- url
+- content
+- section_id
+
+**CompletedContentBlock**
+
+**StudentCourse**
