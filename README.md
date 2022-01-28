@@ -80,4 +80,14 @@ This is a learning management system where teachers can manage student and stude
 
 **CompletedContentBlock**
 
+- student_id
+- course_id
+- completed
+
 **StudentCourse**
+
+- student_id
+- content_block_id
+- url
+- feedback
+- grade
